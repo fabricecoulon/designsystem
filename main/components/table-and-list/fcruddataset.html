@@ -6,33 +6,33 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Datamängdredigerare - FK Designsystem</title><link
             rel="stylesheet"
-            href="../../assets/docs-38fc0e.css"
+            href="../../assets/docs-055150.css"
             crossorigin
-            integrity="sha384-Ksehtg/7PafrISZn4PgfBcbAtbLOFUYVN7xtXieEMMGjzy424otRx+p+hXfXTTOo"
+            integrity="sha384-PNafhOF/pIRPf8m70Kiz168aXME8nYyd67UrTMJFxxTycVh0LzCRvo5udf0EkgtC"
             
         />
         <link
             rel="stylesheet"
-            href="../../assets/docs-fkui-4ecb6d.css"
+            href="../../assets/docs-fkui-dc1d45.css"
             crossorigin
-            integrity="sha384-CC6Vb3lD+/MxRQkRAEekVk7Fo0SZFS6JwkUWKQWZwFuguHLB6tQ0+3tFeeqDSTwr"
+            integrity="sha384-NucoCS/p5xLF+rilAxHqocSUb6z5VCD+Ds9GYZTlYhAcEfvVKQiqoZ8qrCPKCsEN"
             data-theme="fkui" disabled
         />
 
         <script type="importmap">
             {
   "imports": {
-    "vue": "../../assets/vendor-vue-fd7b76.js",
+    "vue": "../../assets/vendor-vue-dc67b0.js",
     "@fkui/logic": "../../assets/vendor-fkui-logic-93a394.js",
     "@fkui/date": "../../assets/vendor-fkui-date-0c3a2b.js",
-    "@fkui/vue": "../../assets/vendor-fkui-vue-6e2642.js",
+    "@fkui/vue": "../../assets/vendor-fkui-vue-dc4688.js",
     "@forsakringskassan/docs-live-example": "../../assets/vendor-forsakringskassan-docs-live-example-490176.js"
   },
   "integrity": {
-    "../../assets/vendor-vue-fd7b76.js": "sha384-NvjytBDM6edAkgRrARzx6LfjDqTDBD/WkckicB5HpsICtpe7jFFpCwBDcNeU8xTy",
+    "../../assets/vendor-vue-dc67b0.js": "sha384-w6RSzRmHPR3Dxv48oPqDytMhEMChKTfEuQ59Vc3Cy089YDnCWSKmgjkzmaZw87CA",
     "../../assets/vendor-fkui-logic-93a394.js": "sha384-PSKJP4cDX4ZTzrb1qc/DIypEHTIjwH5QlZ9vpFDDIxVWtw3lNwATm4t+BRuU4r6Y",
     "../../assets/vendor-fkui-date-0c3a2b.js": "sha384-cI2IRKyqWOUC5A8/puNMefgakk6Jr2xD/F0+GkhvOtNU9fIpXCcGqnPBKQjIJeUv",
-    "../../assets/vendor-fkui-vue-6e2642.js": "sha384-iyJA4iOWdiLbN8vCVuI+oMLuNQdryutzd4fV36duB+4z0lAWv7N5NZiiVGCDcxDL",
+    "../../assets/vendor-fkui-vue-dc4688.js": "sha384-4SDkOwuP1dpzh6kSyJhkEt/1LUvFdDnKaB8DOC4Au8KuLyWzE7iqHjBFrwaSkVAN",
     "../../assets/vendor-forsakringskassan-docs-live-example-490176.js": "sha384-/v3n/0H1sIb8t3Tn+eyyHueaZt6RCBTg63XYg6BQGL5dpZPe3bsTaBTch2RtlT0X"
   }
 }
@@ -82,10 +82,10 @@
 
         <link
             rel="preload"
-            href="../../search-data-112758.json"
+            href="../../search-data-982b77.json"
             as="fetch"
             crossorigin
-            integrity="sha384-PXlEIjTXqxCBGXxbW00SmeTboyYQGfqgNlpuEa5PWEDGAL8PR5lmtGsrbf5TTiU+"
+            integrity="sha384-KTl+c6KY/HJKKn3YvddEN2Kr9G7ODykIJmBQ2TCJE72p52wikyL1oXz1ggIluGQ+"
             id="search-data"
         />
     </head>
@@ -1069,14 +1069,8 @@
         <div class="docs-badge-list">
             
             
-            <a class="docs-badge docs-badge--component docs-badge-link" href="https://github.com/Forsakringskassan/designsystem/blob/b84f4d2154446fd6c8064e2810939651d0287472/packages/vue/src/components/FCrudDataset/FCrudDataset.vue">
+            <a class="docs-badge docs-badge--component docs-badge-link" href="https://github.com/Forsakringskassan/designsystem/blob/e6da6dc13d65cdfaa654f8fcb0697af414ddc0d2/packages/vue/src/components/FCrudDataset/FCrudDataset.vue">
                 FCrudDataset
-            </a>
-            
-            
-            
-            <a class="docs-badge docs-badge--component docs-badge-link" href="https://github.com/Forsakringskassan/designsystem/blob/b84f4d2154446fd6c8064e2810939651d0287472/packages/vue/src/components/FCrudDataset/FCrudButton.vue">
-                FCrudButton
             </a>
             
             
@@ -1129,9 +1123,13 @@
                     <div id="content"><p class="docs-paragraph">Datamändgredigeraren används för att erbjuda användare funktionerna &quot;lägg till&quot;, &quot;ändra&quot; och &quot;ta bort&quot; i en datamängd.
 Komponenten ansvarar inte för hur datamängden och åtgärderna &quot;lägg till&quot;, &quot;ändra&quot; och &quot;ta bort&quot; presenteras.
 Vanligtvis används lista eller tabell för presentation men kan även vara egenutvecklad.</p>
+<p class="docs-paragraph">Om knappens visuella text för &quot;ändra&quot; och &quot;ta bort&quot; inte tydligt identifierar raden från andra rader,
+behöver knappen kompletteras med en text för skärmläsare.
+Beroende på sammanhang kan även knappen för &quot;lägg till ny&quot; behöva kompletteras med en skärmläsartext,
+som tydligör vad som läggs till.</p>
 <h2 id="interaktiv_tabell_med_redigering"><a class="header-anchor" href="#interaktiv_tabell_med_redigering">Interaktiv tabell med redigering</a></h2>
             <div
-                id="example-85943e"
+                id="example-55b036"
                 class="code-preview code-preview--default"
                 
                 
@@ -1139,13 +1137,13 @@ Vanligtvis används lista eller tabell för presentation men kan även vara egen
             >
                 
                 <div class="code-preview__preview">
-        <div id="example-f8a82c"></div>
+        <div id="example-05a07d"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetTableExample-f8a82c.js"></script>
+        <script type="module" src="./FCrudDatasetTableExample-05a07d.js"></script>
     </div>
                 <div>
             <button
@@ -1167,8 +1165,8 @@ Vanligtvis används lista eller tabell för presentation men kan även vara egen
 <span class="hljs-keyword">import</span> { defineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
 <span class="hljs-keyword">import</span> {
     <span class="hljs-title class_">FCrudDataset</span>,
-    <span class="hljs-title class_">FCrudButton</span>,
     <span class="hljs-title class_">FInteractiveTable</span>,
+    <span class="hljs-title class_">FTableButton</span>,
     <span class="hljs-title class_">FTableColumn</span>,
     <span class="hljs-title class_">FTextField</span>,
     <span class="hljs-title class_">FTextareaField</span>,
@@ -1178,8 +1176,8 @@ Vanligtvis används lista eller tabell för presentation men kan även vara egen
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineComponent</span>({
     <span class="hljs-attr">components</span>: {
         <span class="hljs-title class_">FCrudDataset</span>,
-        <span class="hljs-title class_">FCrudButton</span>,
         <span class="hljs-title class_">FInteractiveTable</span>,
+        <span class="hljs-title class_">FTableButton</span>,
         <span class="hljs-title class_">FTableColumn</span>,
         <span class="hljs-title class_">FTextField</span>,
         <span class="hljs-title class_">FTextareaField</span>,
@@ -1199,7 +1197,7 @@ Vanligtvis används lista eller tabell för presentation men kan även vara egen
 
 <span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-dataset</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;fruits&quot;</span> @<span class="hljs-attr">created</span>=<span class="hljs-string">&quot;saveModel&quot;</span> @<span class="hljs-attr">updated</span>=<span class="hljs-string">&quot;saveModel&quot;</span> @<span class="hljs-attr">deleted</span>=<span class="hljs-string">&quot;saveModel&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ updateItem, deleteItem }&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">f-interactive-table</span> <span class="hljs-attr">:rows</span>=<span class="hljs-string">&quot;fruits&quot;</span> <span class="hljs-attr">key-attribute</span>=<span class="hljs-string">&quot;id&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">caption</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Frukter<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ row }&quot;</span>&gt;</span>
@@ -1213,8 +1211,12 @@ Vanligtvis används lista eller tabell för presentation men kan även vara egen
                         {{ row.description }}
                     <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-column</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">f-table-column</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Åtgärd&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;action&quot;</span> <span class="hljs-attr">shrink</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;modify&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;row&quot;</span> <span class="hljs-attr">icon</span> /&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;delete&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;row&quot;</span> <span class="hljs-attr">icon</span> /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">f-table-button</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">&quot;pen&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;updateItem(row)&quot;</span>&gt;</span>
+                            Ändra {{ row.name }}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">f-table-button</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">&quot;trashcan&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;deleteItem(row)&quot;</span>&gt;</span>
+                            Ta bort {{ row.name }}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-button</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-column</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">f-interactive-table</span>&gt;</span>
@@ -1279,7 +1281,7 @@ Vanligtvis används lista eller tabell för presentation men kan även vara egen
 Callback anropas innan modalen visas.</p>
 
                 <div
-                    id="example-c15810"
+                    id="example-af5c6a"
                     class="code-preview code-preview--default"
                     
                     data-tags="static"
@@ -1293,7 +1295,7 @@ Callback anropas innan modalen visas.</p>
                 </div>
             
                 <div
-                    id="example-14354c"
+                    id="example-b98cde"
                     class="code-preview code-preview--default"
                     
                     
@@ -1314,7 +1316,7 @@ Du kan ändra knappordningen för bekräftelsemodalen och därmed ändra knappor
 Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
 
                 <div
-                    id="example-8497c3"
+                    id="example-af8624"
                     class="code-preview code-preview--default"
                     
                     
@@ -1333,7 +1335,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                 </div>
             
                 <div
-                    id="example-d100e5"
+                    id="example-cfb29a"
                     class="code-preview code-preview--default"
                     
                     data-tags="nomarkup"
@@ -1341,18 +1343,18 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                 >
                     
                     <div class="code-preview__preview">
-        <div id="example-b929ca"></div>
+        <div id="example-e51959"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetAdditionalButtons-b929ca.js"></script>
+        <script type="module" src="./FCrudDatasetAdditionalButtons-e51959.js"></script>
     </div>
                 </div>
             <h2 id="datatabell_med_lagg_till_knapp"><a class="header-anchor" href="#datatabell_med_lagg_till_knapp">Datatabell med lägg till-knapp</a></h2>
             <div
-                id="example-7e1693"
+                id="example-67b11d"
                 class="code-preview code-preview--default"
                 
                 
@@ -1360,13 +1362,13 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             >
                 
                 <div class="code-preview__preview">
-        <div id="example-26a6f9"></div>
+        <div id="example-bf5e75"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetTableCreateExample-26a6f9.js"></script>
+        <script type="module" src="./FCrudDatasetTableCreateExample-bf5e75.js"></script>
     </div>
                 <div>
             <button
@@ -1461,7 +1463,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             </div>
         <h2 id="interaktiv_tabell_med_knapp"><a class="header-anchor" href="#interaktiv_tabell_med_knapp">Interaktiv tabell med knapp</a></h2>
             <div
-                id="example-b4248d"
+                id="example-48e075"
                 class="code-preview code-preview--default"
                 
                 
@@ -1469,13 +1471,13 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             >
                 
                 <div class="code-preview__preview">
-        <div id="example-08c0f3"></div>
+        <div id="example-d242fa"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetTableUpdateExample-08c0f3.js"></script>
+        <script type="module" src="./FCrudDatasetTableUpdateExample-d242fa.js"></script>
     </div>
                 <div>
             <button
@@ -1495,16 +1497,16 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                 >
                     <pre class="code-preview__markup"><code class="hljs lang-html" tabindex="0"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript">
 <span class="hljs-keyword">import</span> { defineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
-<span class="hljs-keyword">import</span> { <span class="hljs-title class_">FCrudDataset</span>, <span class="hljs-title class_">FCrudButton</span>, <span class="hljs-title class_">FTextField</span>, <span class="hljs-title class_">FInteractiveTable</span>, <span class="hljs-title class_">FTableColumn</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@fkui/vue&quot;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">FCrudDataset</span>, <span class="hljs-title class_">FTextField</span>, <span class="hljs-title class_">FInteractiveTable</span>, <span class="hljs-title class_">FTableButton</span>, <span class="hljs-title class_">FTableColumn</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@fkui/vue&quot;</span>;
 <span class="hljs-keyword">import</span> { type <span class="hljs-title class_">FruitData</span>, fruits } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./fruit-data&quot;</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineComponent</span>({
     <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;ExampleApp&quot;</span>,
     <span class="hljs-attr">components</span>: {
         <span class="hljs-title class_">FCrudDataset</span>,
-        <span class="hljs-title class_">FCrudButton</span>,
         <span class="hljs-title class_">FTextField</span>,
         <span class="hljs-title class_">FInteractiveTable</span>,
+        <span class="hljs-title class_">FTableButton</span>,
         <span class="hljs-title class_">FTableColumn</span>,
     },
     <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) {
@@ -1522,7 +1524,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-dataset</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;fruits&quot;</span> @<span class="hljs-attr">created</span>=<span class="hljs-string">&quot;saveModel&quot;</span> @<span class="hljs-attr">updated</span>=<span class="hljs-string">&quot;saveModel&quot;</span> @<span class="hljs-attr">deleted</span>=<span class="hljs-string">&quot;saveModel&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ updateItem }&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">f-interactive-table</span> <span class="hljs-attr">:rows</span>=<span class="hljs-string">&quot;fruits&quot;</span> <span class="hljs-attr">key-attribute</span>=<span class="hljs-string">&quot;id&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">caption</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Frukter<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ row }&quot;</span>&gt;</span>
@@ -1536,9 +1538,9 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                         {{ row.description }}
                     <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-column</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">f-table-column</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Åtgärd&quot;</span> <span class="hljs-attr">shrink</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;action&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;modify&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;row&quot;</span> <span class="hljs-attr">icon</span> <span class="hljs-attr">label</span>&gt;</span>
-                            Ändra Namn
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">f-crud-button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">f-table-button</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">&quot;pen&quot;</span> <span class="hljs-attr">label</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;updateItem(row)&quot;</span>&gt;</span>
+                            Ändra <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> {{ row.name }} <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-button</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">f-table-column</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">f-interactive-table</span>&gt;</span>
@@ -1559,7 +1561,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             </div>
         <h2 id="lista_med_redigering"><a class="header-anchor" href="#lista_med_redigering">Lista med redigering</a></h2>
             <div
-                id="example-9d16e1"
+                id="example-2c3102"
                 class="code-preview code-preview--default"
                 
                 
@@ -1567,13 +1569,13 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             >
                 
                 <div class="code-preview__preview">
-        <div id="example-717daf"></div>
+        <div id="example-31ea98"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetListExample-717daf.js"></script>
+        <script type="module" src="./FCrudDatasetListExample-31ea98.js"></script>
     </div>
                 <div>
             <button
@@ -1593,20 +1595,13 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                 >
                     <pre class="code-preview__markup"><code class="hljs lang-html" tabindex="0"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript">
 <span class="hljs-keyword">import</span> { defineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
-<span class="hljs-keyword">import</span> {
-    <span class="hljs-title class_">FCrudDataset</span>,
-    <span class="hljs-title class_">FCrudButton</span>,
-    <span class="hljs-title class_">FList</span>,
-    <span class="hljs-title class_">FStaticField</span>,
-    <span class="hljs-title class_">FTextField</span>,
-    <span class="hljs-title class_">FTextareaField</span>,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@fkui/vue&quot;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">FCrudDataset</span>, <span class="hljs-title class_">FIcon</span>, <span class="hljs-title class_">FList</span>, <span class="hljs-title class_">FStaticField</span>, <span class="hljs-title class_">FTextField</span>, <span class="hljs-title class_">FTextareaField</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@fkui/vue&quot;</span>;
 <span class="hljs-keyword">import</span> { type <span class="hljs-title class_">FruitData</span>, fruits } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./fruit-data&quot;</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineComponent</span>({
     <span class="hljs-attr">components</span>: {
         <span class="hljs-title class_">FCrudDataset</span>,
-        <span class="hljs-title class_">FCrudButton</span>,
+        <span class="hljs-title class_">FIcon</span>,
         <span class="hljs-title class_">FList</span>,
         <span class="hljs-title class_">FStaticField</span>,
         <span class="hljs-title class_">FTextField</span>,
@@ -1648,7 +1643,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
         @<span class="hljs-attr">updated</span>=<span class="hljs-string">&quot;saveModel&quot;</span>
         @<span class="hljs-attr">deleted</span>=<span class="hljs-string">&quot;saveModel&quot;</span>
     &gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ updateItem, deleteItem }&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">f-list</span> <span class="hljs-attr">:items</span>=<span class="hljs-string">&quot;fruits&quot;</span> <span class="hljs-attr">element-id</span>=<span class="hljs-string">&quot;example&quot;</span> <span class="hljs-attr">key-attribute</span>=<span class="hljs-string">&quot;id&quot;</span> <span class="hljs-attr">selectable</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ item }&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
@@ -1666,10 +1661,24 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col col--md-5&quot;</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button-list&quot;</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;modify&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">icon</span> <span class="hljs-attr">label</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--small button--tertiary&quot;</span>
+                                        @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;updateItem(item)&quot;</span>
+                                    &gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">f-icon</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button__icon&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;pen&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">f-icon</span>&gt;</span>
+                                        Ändra <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;delete&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">icon</span> <span class="hljs-attr">label</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--small button--tertiary&quot;</span>
+                                        @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;deleteItem(item)&quot;</span>
+                                    &gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">f-icon</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button__icon&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;trashcan&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">f-icon</span>&gt;</span>
+                                        Ta bort <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1723,7 +1732,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             </div>
         <h2 id="sorterbar_lista"><a class="header-anchor" href="#sorterbar_lista">Sorterbar lista</a></h2>
             <div
-                id="example-70d50c"
+                id="example-17aea1"
                 class="code-preview code-preview--default"
                 
                 
@@ -1731,13 +1740,13 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             >
                 
                 <div class="code-preview__preview">
-        <div id="example-9b0ff9"></div>
+        <div id="example-459f32"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetSortListExample-9b0ff9.js"></script>
+        <script type="module" src="./FCrudDatasetSortListExample-459f32.js"></script>
     </div>
                 <div>
             <button
@@ -1758,8 +1767,8 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                     <pre class="code-preview__markup"><code class="hljs lang-html" tabindex="0"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript">
 <span class="hljs-keyword">import</span> { defineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
 <span class="hljs-keyword">import</span> {
-    <span class="hljs-title class_">FCrudButton</span>,
     <span class="hljs-title class_">FCrudDataset</span>,
+    <span class="hljs-title class_">FIcon</span>,
     <span class="hljs-title class_">FList</span>,
     <span class="hljs-title class_">FSortFilterDataset</span>,
     <span class="hljs-title class_">FStaticField</span>,
@@ -1770,8 +1779,8 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineComponent</span>({
     <span class="hljs-attr">components</span>: {
-        <span class="hljs-title class_">FCrudButton</span>,
         <span class="hljs-title class_">FCrudDataset</span>,
+        <span class="hljs-title class_">FIcon</span>,
         <span class="hljs-title class_">FList</span>,
         <span class="hljs-title class_">FSortFilterDataset</span>,
         <span class="hljs-title class_">FStaticField</span>,
@@ -1804,7 +1813,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-dataset</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;fruits&quot;</span> <span class="hljs-attr">:before-create</span>=<span class="hljs-string">&quot;beforeCreate&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ updateItem, deleteItem }&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">f-sort-filter-dataset</span>
                 <span class="hljs-attr">:data</span>=<span class="hljs-string">&quot;fruits&quot;</span>
                 <span class="hljs-attr">:sortable-attributes</span>=<span class="hljs-string">&quot;{
@@ -1826,10 +1835,26 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                                     <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col col--sm-1&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;modify&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">icon</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--small button--tertiary&quot;</span>
+                                        @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;updateItem(item)&quot;</span>
+                                    &gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">f-icon</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button__icon&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;pen&quot;</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Ändra {{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">f-icon</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col col--sm-1&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;delete&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">icon</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--small button--tertiary&quot;</span>
+                                        @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;deleteItem(item)&quot;</span>
+                                    &gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">f-icon</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button__icon&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;trashcan&quot;</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Ta bort {{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">f-icon</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
@@ -1900,7 +1925,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
 </ul>
 
             <div
-                id="example-f2c9c7"
+                id="example-7302e5"
                 class="code-preview code-preview--default"
                 
                 
@@ -1908,13 +1933,13 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
             >
                 
                 <div class="code-preview__preview">
-        <div id="example-3e8502"></div>
+        <div id="example-9ec1aa"></div>
         <!-- [html-validate-disable-next element-permitted-content -- technical debt, should be inserted into <head>] -->
         <style>
             
         </style>
         <!-- [html-validate-disable-next require-sri -- technical debt, should generate integrity but we don't know the hash of the compiled file yet] -->
-        <script type="module" src="./FCrudDatasetCustomTextExample-3e8502.js"></script>
+        <script type="module" src="./FCrudDatasetCustomTextExample-9ec1aa.js"></script>
     </div>
                 <div>
             <button
@@ -1934,21 +1959,14 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                 >
                     <pre class="code-preview__markup"><code class="hljs lang-html" tabindex="0"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript">
 <span class="hljs-keyword">import</span> { defineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue&quot;</span>;
-<span class="hljs-keyword">import</span> {
-    <span class="hljs-title class_">FCrudDataset</span>,
-    <span class="hljs-title class_">FCrudButton</span>,
-    <span class="hljs-title class_">FList</span>,
-    <span class="hljs-title class_">FStaticField</span>,
-    <span class="hljs-title class_">FTextField</span>,
-    <span class="hljs-title class_">FTextareaField</span>,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@fkui/vue&quot;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">FCrudDataset</span>, <span class="hljs-title class_">FIcon</span>, <span class="hljs-title class_">FList</span>, <span class="hljs-title class_">FStaticField</span>, <span class="hljs-title class_">FTextField</span>, <span class="hljs-title class_">FTextareaField</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@fkui/vue&quot;</span>;
 <span class="hljs-keyword">import</span> { type <span class="hljs-title class_">FruitData</span>, fruits } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./fruit-data&quot;</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">defineComponent</span>({
     <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;ExampleApp&quot;</span>,
     <span class="hljs-attr">components</span>: {
         <span class="hljs-title class_">FCrudDataset</span>,
-        <span class="hljs-title class_">FCrudButton</span>,
+        <span class="hljs-title class_">FIcon</span>,
         <span class="hljs-title class_">FList</span>,
         <span class="hljs-title class_">FStaticField</span>,
         <span class="hljs-title class_">FTextField</span>,
@@ -1992,7 +2010,7 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
         @<span class="hljs-attr">updated</span>=<span class="hljs-string">&quot;saveModel&quot;</span>
         @<span class="hljs-attr">deleted</span>=<span class="hljs-string">&quot;saveModel&quot;</span>
     &gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ updateItem, deleteItem }&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">f-list</span> <span class="hljs-attr">:items</span>=<span class="hljs-string">&quot;fruits&quot;</span> <span class="hljs-attr">element-id</span>=<span class="hljs-string">&quot;example&quot;</span> <span class="hljs-attr">key-attribute</span>=<span class="hljs-string">&quot;id&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">template</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">&quot;{ item }&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
@@ -2010,10 +2028,24 @@ Du behöver själv hantera vad klick på knappen ska utföra för åtgärd.</p>
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col col--lg-5 col--md-6&quot;</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row row--align-end&quot;</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;modify&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">icon</span> <span class="hljs-attr">label</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--small button--tertiary&quot;</span>
+                                        @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;updateItem(item)&quot;</span>
+                                    &gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">f-icon</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button__icon&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;pen&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">f-icon</span>&gt;</span>
+                                        Ändra <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">f-crud-button</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;delete&quot;</span> <span class="hljs-attr">:item</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">icon</span> <span class="hljs-attr">label</span> /&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+                                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--small button--tertiary&quot;</span>
+                                        @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;deleteItem(item)&quot;</span>
+                                    &gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">f-icon</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button__icon&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;trashcan&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">f-icon</span>&gt;</span>
+                                        Ta bort <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -2623,9 +2655,9 @@ See &lt;f-validation-form&gt; <code>beforeValidation</code> props for more info.
                         <dd>
                             <p>Slot for displaying the data.</p>
 
-                            
-                            
-                            
+                            <p class="docs-api__list-title">Bindings:</p><ul class="docs-api__list">
+                            <li><code>updateItem: (item: T) =&gt; void</code> <span role="presentation">&mdash;</span> Callback to trigger modification modal</li><li><code>deleteItem: (item: T) =&gt; void</code> <span role="presentation">&mdash;</span> Callback to trigger deletion modal</li>
+                            </ul>
                             
                         </dd>
                     
@@ -2725,114 +2757,9 @@ See &lt;f-validation-form&gt; <code>beforeValidation</code> props for more info.
                         </dd>
                     
         </dl>
-    <h3 id="fcrudbutton"><a class="header-anchor" href="#fcrudbutton"><code>FCrudButton</code></a></h3>
-        <h4 id="fcrudbutton-props">
-            <a class="header-anchor" href="#fcrudbutton-props">Props</a>
-        </h4>
-        <dl class="docs-api docs-api--slots">
-            
-                        <dt>
-                            <code id="fcrudbutton-prop-action"
-                                ><a class="docs-api__anchor" href="#fcrudbutton-prop-action"
-                                    ><span class="docs-api__name"
-                                        >action</span
-                                    >: string</a
-                                ></code
-                            >
-                            
-                            
-                        </dt>
-                        <dd>
-                            <p>The action to be performed by the button.
-Must be one of the following values: &quot;delete&quot; or &quot;modify&quot;.</p>
+    <h3 id="fcrudbutton"><a class="header-anchor" href="#fcrudbutton"><code>FCrudButton</code></a></h3><p class="docs-paragraph">Komponenten är deprekerad.
+Läs mer om att <a href="../../gettingstarted/migration/migrating-crud-button.html">migrera FCrudButton</a>.</p>
 
-                            
-                            
-                        </dd>
-                    
-                        <dt>
-                            <code id="fcrudbutton-prop-icon"
-                                ><a class="docs-api__anchor" href="#fcrudbutton-prop-icon"
-                                    ><span class="docs-api__name"
-                                        >icon</span
-                                    >: boolean</a
-                                ></code
-                            >
-                            <span class="docs-tag docs-tag--default">Optional</span>
-                            
-                        </dt>
-                        <dd>
-                            <p>Determines if an icon should be displayed on the button.</p>
-
-                            <p class="doc-api__item">Default: <code>false</code></p>
-                            
-                        </dd>
-                    
-                        <dt>
-                            <code id="fcrudbutton-prop-item"
-                                ><a class="docs-api__anchor" href="#fcrudbutton-prop-item"
-                                    ><span class="docs-api__name"
-                                        >item</span
-                                    >: object</a
-                                ></code
-                            >
-                            
-                            
-                        </dt>
-                        <dd>
-                            <p>The item that the action will be performed on.</p>
-
-                            
-                            
-                        </dd>
-                    
-                        <dt>
-                            <code id="fcrudbutton-prop-label"
-                                ><a class="docs-api__anchor" href="#fcrudbutton-prop-label"
-                                    ><span class="docs-api__name"
-                                        >label</span
-                                    >: boolean</a
-                                ></code
-                            >
-                            <span class="docs-tag docs-tag--default">Optional</span>
-                            
-                        </dt>
-                        <dd>
-                            <p>Determines if the button should display a label.
-If false, the button will use a visually hidden text for accessibility.</p>
-
-                            <p class="doc-api__item">Default: <code>false</code></p>
-                            
-                        </dd>
-                    
-        </dl>
-    
-        <h4 id="fcrudbutton-slots">
-            <a class="header-anchor" href="#fcrudbutton-slots">Slots</a>
-        </h4>
-        <dl class="docs-api docs-api--slots">
-            
-                        <dt>
-                            <code id="fcrudbutton-slot-default"
-                                ><a class="docs-api__anchor" href="#fcrudbutton-slot-default"
-                                    ><span class="docs-api__name"
-                                        >default</span
-                                    ></a
-                                ></code
-                            >
-                            
-                        </dt>
-                        <dd>
-                            <p>Slot used to provide custom content for the button text.</p>
-
-                            
-                            
-                            
-                            
-                        </dd>
-                    
-        </dl>
-    
 
                     </div>
                 </main>
@@ -2848,9 +2775,9 @@ If false, the button will use a visually hidden text for accessibility.</p>
 
 <div class="footer__center"></div>
 
-<div class="footer__right"><div class="version">main (<a href="https://github.com/Forsakringskassan/designsystem/commits/b84f4d2154446fd6c8064e2810939651d0287472">b84f4d2</a>)<br />
+<div class="footer__right"><div class="version">main (<a href="https://github.com/Forsakringskassan/designsystem/commits/e6da6dc13d65cdfaa654f8fcb0697af414ddc0d2">e6da6dc</a>)<br />
         
-        2025-05-13 08:34
+        2025-06-16 08:12
 </div>
 <div class="toolbar__item">
     <form id="version">
@@ -2862,7 +2789,7 @@ If false, the button will use a visually hidden text for accessibility.</p>
     <dialog id="version-dialog">
         <div id="version-dialog-head">
             <h1>Välj version</h1>
-            <button type="button" class="button button--discrete button--discrete--black">
+            <button type="button" class="button button--tertiary button--tertiary--black">
                 <span>Stäng</span>
                 <svg class="button__icon icon f-icon-close" focusable="false" aria-hidden>
                     <use href="#f-icon-close"></use>
@@ -2963,16 +2890,16 @@ If false, the button will use a visually hidden text for accessibility.</p>
             integrity="sha384-dRUZKuoDucHdxWgTjhjsiUKqA/8XdoGnuv7g3Sr48xEYC0Ek5QprgPB4/cPcByma"
             
         ></script><script
-            src="../../assets/processors/selectable-version/select-version-910589.js"
+            src="../../assets/processors/selectable-version/select-version-7499db.js"
             type="module"
             crossorigin
-            integrity="sha384-I1UkV0jct1U2DK2sHeJaQT/Y/zs56PzTr8ov/aUSg8JBcBJtIOPYDvMy2o167CwS"
+            integrity="sha384-l3ZW0IIqmUSoqYFJccXeg4Csj585c0I7Kue66lsju34tB8aeqUzzxCnwZec4aexV"
             
         ></script><script
-            src="../../assets/main-0ec342.js"
+            src="../../assets/main-ae2d8a.js"
             type="module"
             crossorigin
-            integrity="sha384-024ARbIkk+36wQRMNqANavYck/wi86OjA7OQfU3szttx8PSUfCLc+u90c5D34iPZ"
+            integrity="sha384-9HlnJ0bDhIh869ey0PpFUZbzoCDs95NybK2Ug2C5d3amgzohA5+6p8t3Qi3Y5pCy"
             
         ></script>
     </body>
@@ -2982,7 +2909,7 @@ If false, the button will use a visually hidden text for accessibility.</p>
          Source file: docs/components/table-and-list/FCrudDataset.md
          Document ID: fs:docs/components/table-and-list/FCrudDataset.md
          Document name: FCrudDataset
-         Document alias: component:FCrudDataset, component:FCrudButton
+         Document alias: component:FCrudDataset
 
     -->
 </html>
