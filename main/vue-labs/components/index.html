@@ -6,32 +6,36 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Komponenter - FKUI Labs</title><link
             rel="stylesheet"
-            href="../assets/docs-c88304.css"
+            href="../assets/docs-5206cb.css"
             crossorigin
-            integrity="sha384-68PsFOxyHALSskb3+FLl7lhGUI6X6SXmzpckyYFYdBeCRu3HXm+2Bx3wqoA06u6z"
+            integrity="sha384-BYI/jNFivC7bHRA/vWCpoXoWyMZ54HUVtgckf7rbnAVM7OSG/hv3AbIGepKGGscz"
             
         />
         <link
             rel="stylesheet"
-            href="../assets/docs-fkui-72163b.css"
+            href="../assets/docs-fkui-739a55.css"
             crossorigin
-            integrity="sha384-SWStfS9j53MLpwHNBON9gU0spZk0TmyAB8Z+n6BvhmqpzTKeGc4B5xVtiAXC1bi1"
+            integrity="sha384-uz+6WPO4Mojvx2NlswR+QRzFsZqeoXdLpko5BOEQMd1J4KWaLn1oTX1tCO+HRqOb"
             data-theme="fkui" disabled
         />
 
         <script type="importmap">
             {
   "imports": {
-    "vue": "../assets/vendor-vue-fd4a2d.js",
-    "@fkui/logic": "../assets/vendor-fkui-logic-cb1d47.js",
-    "@fkui/date": "../assets/vendor-fkui-date-024cc2.js",
-    "@fkui/vue": "../assets/vendor-fkui-vue-957e42.js"
+    "vue": "../assets/vendor-vue-65d7e0.js",
+    "@fkui/logic": "../assets/vendor-fkui-logic-b0075f.js",
+    "@fkui/date": "../assets/vendor-fkui-date-1d9b40.js",
+    "@fkui/vue": "../assets/vendor-fkui-vue-629a55.js",
+    "@fkui/vue-labs": "../assets/vendor-fkui-vue-labs-ef733e.js",
+    "@forsakringskassan/docs-live-example": "../assets/vendor-forsakringskassan-docs-live-example-c58cb4.js"
   },
   "integrity": {
-    "../assets/vendor-vue-fd4a2d.js": "sha384-kmC4T0C5ZzwbUEm2knIR443x2ILwlEZgPawQWZvqbegtVKkhK/F5ifTqm7n0M6rE",
-    "../assets/vendor-fkui-logic-cb1d47.js": "sha384-cYyAMpzX6o+Mx1ahOrF5blFq85m9utKy9qg8GmepiyZ+c/Ha6q7usDcijN+bsdK1",
-    "../assets/vendor-fkui-date-024cc2.js": "sha384-p0OHhMI0IsoyIh+/1Cyvu2qD+riXRyL6F/I3NNxpdud8wBwA0pXVP6Vdo3y0bdMO",
-    "../assets/vendor-fkui-vue-957e42.js": "sha384-tQ/bHDZhk2VBy2lgEO4dOdVDe+oaP04kN4PY/vTtauTOYe5UAhmjI/Re0drwuzl9"
+    "../assets/vendor-vue-65d7e0.js": "sha384-MgeF33e4jkQ2EjO0v2n9zQ80YVIYPj41Yccdg07ykaiJRlxfzYv+oKmgqHz6HWqA",
+    "../assets/vendor-fkui-logic-b0075f.js": "sha384-8+BulV9pwaaof6GCYzDYWUpbIvcu9fc2Uh+6BPuhF2mi1O4YlXtNBWTy7IzL6v7N",
+    "../assets/vendor-fkui-date-1d9b40.js": "sha384-jwnzF0g6EtC2yS5CmBTnhsoxNKltuOO2MAIxVshZCar1ztgxBrTNxNUOlB18Hk/w",
+    "../assets/vendor-fkui-vue-629a55.js": "sha384-qTB8XJxL8Eir3MOIY//AjANCZQtJVdokxvFJp1Mlwj7utJRL4j9oX5IKn+T/bFp8",
+    "../assets/vendor-fkui-vue-labs-ef733e.js": "sha384-y4Nhi96g42XUG2AjIy/SePD0704Qreyrp9noy38DMkdv1gw7kVXNhFSOYDFnbRfR",
+    "../assets/vendor-forsakringskassan-docs-live-example-c58cb4.js": "sha384-xAUwr4rpouMt+o7vHGbabas4vhkvbIiXbvpNEtactlSt/BvMgnkkbyLQQoZt0IZ+"
   }
 }
         </script><script
@@ -42,10 +46,10 @@
             
         ></script><link
             rel="preload"
-            href="../search-data-232534.json"
+            href="../search-data-67e2f4.json"
             as="fetch"
             crossorigin
-            integrity="sha384-WtTatrpLp6yNd1krwBKlJOeJRJfoyu/BSi9HDLjrGx+u2YmMJZ+p0Fb+kq/ABRNA"
+            integrity="sha384-qap5T4Ywhnk/jbBbD2k2uh/h3EyhXvJdAYmTI3scXHcQPwTJxJE9lcxLB9Y7VkUT"
             id="search-data"
         />
     </head>
@@ -60,6 +64,13 @@
     <ul class="docs-topnav__list"><li class="docs-topnav__item highlight">
             <a class="docs-topnav__anchor" href="./"> Komponenter </a>
         </li>
+        
+        
+        
+        
+        <li class="docs-topnav__item ">
+            <a class="docs-topnav__anchor" href="../pageobjects/"> Pageobjekt </a>
+        </li>
         <li class="docs-topnav__item docs-topnav__item--more" style="visibility: hidden">
             <button type="button" class="docs-topnav__anchor" aria-expanded="false">
                 <span>Mer</span>
@@ -71,6 +82,13 @@
                 <ul class="docs-contextmenu__list"><li class="docs-contextmenu__item highlight" style="display: none">
                         <a class="docs-contextmenu__anchor" href="./"> Komponenter </a>
                     </li>
+                    
+                    
+                    
+                    
+                    <li class="docs-contextmenu__item " style="display: none">
+                        <a class="docs-contextmenu__anchor" href="../pageobjects/"> Pageobjekt </a>
+                    </li>
                     </ul>
             </div>
         </li>
@@ -80,16 +98,17 @@
             <div class="page-header__right-slot">
                 <div class="toolbar"><div class="toolbar__item">
     <form id="search" role="search">
-        <button class="text-field__input" type="submit">
-            <svg focusable="false" class="icon button__icon">
-                <use xlink:href="#docs-icon-search"></use></svg
-            >Sök <kbd>ctrl-k</kbd>
+        <button type="submit">
+            <svg focusable="false" class="search__icon">
+                <use xlink:href="#docs-icon-search"></use>
+            </svg>
+            Sök <kbd>ctrl-k</kbd>
         </button>
     </form>
 </div>
 <div class="toolbar__item">
     <span class="version">
-        6.23.0
+        6.30.0
     </span>
 </div>
 </div>
@@ -113,17 +132,6 @@
         >
             FTable
         </a>
-    </li><li class="link active">
-        <a
-            href="./"
-            
-            
-            
-            data-path="components/"
-            
-        >
-            Komponenter
-        </a>
     </li><li class="link ">
         <a
             href="./xtimetextfield.html"
@@ -134,6 +142,17 @@
             
         >
             Tidsinmatning
+        </a>
+    </li><li class="link ">
+        <a
+            href="./xfiledragdrop.html"
+            
+            
+            
+            data-path="components/xfiledragdrop.html"
+            
+        >
+            XFileDragdrop
         </a>
     </li></ol>
 </nav>
@@ -228,10 +247,10 @@
         <p><kbd>Esc</kbd> för att stänga <kbd>Pil upp/ner</kbd> för att navigera <kbd>Enter</kbd> för att välja</p>
     </form>
 </dialog><script
-            src="../assets/main-8a3e62.js"
+            src="../assets/main-07fd53.js"
             type="module"
             crossorigin
-            integrity="sha384-0RlHNrQgJvdxR4N7lQSd3sc3MQDrTPlAovPWpFZDaeI8hkGn544BhbzOJxQzGpcO"
+            integrity="sha384-a+r1YAkm2Z8i9EAlrXJtUwWeeyVl3nmXeE5QZxfNHgvwSuC86xWs+tVaTg6Myv/d"
             
         ></script>
     </body>
@@ -240,7 +259,7 @@
 
          Source file: docs/components/index.md
          Document ID: fs:docs/components/index.md
-         Document name: index
+         Document name: components
          Document alias: 
 
     -->
